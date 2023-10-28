@@ -5,10 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Placeholder</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        video {
+            max-width: 100%;
+            max-height: 100vh;
+        }
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Our Video Site</h1>
-    <video width="640" height="360" controls>
+    <video controls>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
