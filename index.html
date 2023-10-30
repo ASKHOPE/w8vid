@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Placeholder</title>
     <style>
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             background-color: #f0f0f0;
         }
         iframe {
-            max-width: 100%;
-            max-height: 100vh;
+            width: 100vw;
+            height: 100vh;
+            border: none;
         }
         h1 {
             position: absolute;
@@ -25,11 +30,12 @@
             transform: translateX(-50%);
             font-family: Arial, sans-serif;
             color: #333;
+            z-index: 10;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Video Site</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1AvekFISYNA" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/1AvekFISYNA?autoplay=1&controls=0" allowfullscreen></iframe>
 </body>
 </html>
