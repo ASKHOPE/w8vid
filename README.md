@@ -1,2 +1,2 @@
-# cse270-assignment-demo
+# cse341-assignment-video
 # Demonstration Purpose only
